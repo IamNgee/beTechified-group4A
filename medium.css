@@ -1,6 +1,6 @@
 
 body{
-    background: #d73;
+    background: #F5F5F5;
     margin: 0;
     overflow-y: scroll;
 }
@@ -29,8 +29,12 @@ nav > ul li:nth-child(2) a{
     
 }
 
+br#break{
+  display: none;
+}
+
 header {
-    background: greenyellow;
+    background: #F5F5F5;
     border-bottom: 2px solid #034;
     padding: 10px;
     position: fixed;
@@ -92,13 +96,15 @@ header {
 
 .div1{
     display: flex;
+    max-width: 100%;
     justify-content:space-between;
+    /* align-items: flex-start; */
     flex-direction: column;
 
 }
 
 .container {
-    margin-top: 120px;
+    margin-top: 80px;
     margin-left: 60px;
     /* margin-right: 60px; */
     display: flex;
@@ -107,7 +113,7 @@ header {
 }
 
 footer{
-    background: greenyellow;
+    background: #F5F5F5;
     border-top: 2px solid #034;
     padding: 10px;
     position: fixed;
@@ -116,6 +122,10 @@ footer{
     bottom: 0;        /* 👈 good practice */
     left: 0;  
     
+}
+
+footer >ul {
+  margin-top: 2px;
 }
 
 .footer-group {
@@ -129,7 +139,7 @@ footer{
 footer > ul li a{
     display: inline-block;
     text-decoration: none;
-    color: #690000;
+    color: #333;
     font-weight: light;
     padding: 10px 10px;
     /* border: 3px solid red; */
@@ -171,30 +181,40 @@ footer > ul li a{
     padding: 0 20px;
   }
 
-    .nav-group a:not(.btn) {
-        display: none; /* hide extra links */
-    }
+  .nav-group a:not(.btn) {
+    display: none; /* hide extra links */
+  }
 
-     .btn {
-    padding: 8px 16px;
-    font-size: 14px;
+  .btn {
+    padding: 6px 10px;
+    font-size: 12px;
   }
 
   /* MAIN CONTAINER */
   .container {
     flex-direction: column;
-    margin: 75px 20px 80px;
-    text-align: center;
+    margin: 100px 20px 0px;
+    text-align: left;
+  }
+
+  br#break{
+    display: block;
   }
 
   /* TEXT SECTION */
   .div1 {
-    align-items: center;
+    align-items: start;
+    justify-content: start;
   }
 
   .div1 h1 {
     font-size: 48px;
     line-height: 1.1;
+    text-align: left;
+  }
+
+  #break{
+    display: block;
   }
 
   .div1 p {
@@ -218,7 +238,8 @@ footer > ul li a{
 
   /* FOOTER */
   footer {
-    padding: 10px 5px;
+    padding: 8px 5px;
+    background: #000;
   }
 
   .footer-group {
@@ -230,7 +251,7 @@ footer > ul li a{
         display: none;
     }
     footer ul {
-        margin-top: 0;
+        /* margin-top: 0; */
         display: flex;
         padding: 0 20px 0 ;
     }
