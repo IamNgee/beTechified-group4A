@@ -139,7 +139,7 @@ footer >ul {
 footer > ul li a{
     display: inline-block;
     text-decoration: none;
-    color: #F5F5F5;
+    color: #034;
     font-weight: light;
     padding: 10px 10px;
     /* border: 3px solid red; */
@@ -266,7 +266,7 @@ footer > ul li a{
 
   footer a {
     font-size: 13px;
-    color: #6b6b6b; 
+    color: #fff; 
     padding: 0;
   }
 
@@ -287,5 +287,17 @@ footer > ul li a{
     align-items: center;
     padding: 0;
     margin: 0;
+    /* color: #eee; */
   }
+
+  footer > ul li a{
+    /* display: inline-block;
+    text-decoration: none; */
+    color: #eee;
+    /* font-weight: light;
+    padding: 10px 10px;
+    /* border: 3px solid red; */
+    /* border-radius: 40px; */
+    transition: background 0.3s ease; */
+}
 }
